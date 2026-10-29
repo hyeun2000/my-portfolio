@@ -2,12 +2,13 @@ import Box from '@mui/material/Box';
 import CircularProgress from '@mui/material/CircularProgress';
 
 import { formatDate } from '../../utils/format-date';
+import AiAvatar from './ai-avatar';
 import ContactCard from './contact-card';
-import { GUEST_EMOJIS } from './contact-data';
+import { GUEST_AVATARS } from './contact-data';
 
 /**
  * GuestbookList 컴포넌트
- * 방문자들이 남긴 방명록을 이모지 아바타와 함께 최신순으로 보여준다.
+ * 방문자들이 남긴 방명록을 AI 캐릭터 아바타와 함께 최신순으로 보여준다.
  *
  * Props:
  * @param {Array} entries - 방명록 목록 ({ id, nickname, sns, message, created_at }) [Required]
@@ -52,22 +53,7 @@ function GuestbookList({ entries, isLoading = false, error = '', isConfigured = 
               border: '2px dashed var(--color-warm-border)',
             }}
           >
-            <Box
-              aria-hidden="true"
-              sx={{
-                flexShrink: 0,
-                width: 40,
-                height: 40,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                borderRadius: '50%',
-                fontSize: '1.4rem',
-                bgcolor: 'var(--color-warm-yellow)',
-              }}
-            >
-              { GUEST_EMOJIS[id % GUEST_EMOJIS.length] }
-            </Box>
+            <AiAvatar avatar={ GUEST_AVATARS[id % GUEST_AVATARS.length] } />
             <Box sx={{ minWidth: 0, flex: 1 }}>
               <Box sx={{ display: 'flex', flexWrap: 'wrap', alignItems: 'baseline', columnGap: 1 }}>
                 <Box component="strong" sx={{ color: 'var(--color-warm-text)', wordBreak: 'break-all' }}>
