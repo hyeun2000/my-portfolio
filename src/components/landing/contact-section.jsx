@@ -65,7 +65,7 @@ function ContactSection() {
           color: 'var(--color-warm-text)',
         }}
       >
-        똑똑, 놀러오세요! <KnockingHandIcon /> 🍊
+        똑똑, 놀러오세요! <KnockingHandIcon />
       </Typography>
       <Typography
         sx={{
