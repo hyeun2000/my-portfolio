@@ -16,7 +16,7 @@ import { SNS_LINKS } from './contact-data';
  */
 function SnsLinksCard() {
   return (
-    <ContactCard emoji="🛸" title="SNS에서 만나요" tone="orange">
+    <ContactCard emoji="💻" title="SNS에서 만나요" tone="orange">
       <Box sx={{ mb: 2, fontSize: { xs: '0.95rem', md: '1rem' }, lineHeight: 1.6, color: 'var(--color-warm-text-soft)' }}>
         일상, 작업기록, 가끔은 맛집 사진까지 🍜 편하게 팔로우하고 말 걸어주세요!
       </Box>

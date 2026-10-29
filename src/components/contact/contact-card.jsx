@@ -12,7 +12,8 @@ const CARD_TONES = {
  * 이모지 + 제목이 달린 따뜻한 색감의 카드. 마우스를 올리면 살짝 튀어오른다.
  *
  * Props:
- * @param {string} emoji - 제목 앞에 붙는 이모지 [Required]
+ * @param {string} emoji - 제목 앞에 붙는 이모지 [Optional]
+ * @param {node} icon - emoji 대신 보여줄 아이콘 (자체 hover 애니메이션을 가진 경우) [Optional]
  * @param {string} title - 카드 제목 [Required]
  * @param {string} tone - 카드 색상 ('yellow' | 'orange') [Optional, 기본값: 'yellow']
  * @param {node} children - 카드 본문 [Required]
@@ -20,11 +21,12 @@ const CARD_TONES = {
  * Example usage:
  * <ContactCard emoji="💌" title="연락처" tone="orange">...</ContactCard>
  */
-function ContactCard({ emoji, title, tone = 'yellow', children }) {
+function ContactCard({ emoji, icon, title, tone = 'yellow', children }) {
   const { bg, tilt } = CARD_TONES[tone] ?? CARD_TONES.yellow;
 
   return (
     <Box
+      className="contact-card"
       sx={{
         height: '100%',
         p: { xs: 2.5, md: 3 },
@@ -60,14 +62,16 @@ function ContactCard({ emoji, title, tone = 'yellow', children }) {
           color: 'var(--color-warm-text)',
         }}
       >
-        <Box
-          component="span"
-          className="contact-card__emoji"
-          aria-hidden="true"
-          sx={{ display: 'inline-block', fontSize: '1.6rem', transition: 'transform 0.25s ease' }}
-        >
-          { emoji }
-        </Box>
+        { icon ?? (
+          <Box
+            component="span"
+            className="contact-card__emoji"
+            aria-hidden="true"
+            sx={{ display: 'inline-block', fontSize: '1.6rem', transition: 'transform 0.25s ease' }}
+          >
+            { emoji }
+          </Box>
+        ) }
         { title }
       </Typography>
       { children }

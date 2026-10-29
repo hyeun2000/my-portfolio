@@ -15,7 +15,7 @@ import { CONTACT_ITEMS } from './contact-data';
  */
 function ContactInfoCard() {
   return (
-    <ContactCard emoji="📮" title="연락처" tone="yellow">
+    <ContactCard emoji="📱" title="연락처" tone="yellow">
       <Box component="ul" sx={{ m: 0, p: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 1.5 }}>
         { CONTACT_ITEMS.map(({ id, emoji, icon: Icon, label, value, href }) => (
           <Box component="li" key={ id } sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>

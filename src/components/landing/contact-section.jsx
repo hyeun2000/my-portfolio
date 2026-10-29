@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 
 import useGuestbook from '../../hooks/use-guestbook';
 import ContactInfoCard from '../contact/contact-info-card';
+import KnockingHandIcon from '../contact/knocking-hand-icon';
 import GuestbookForm from '../contact/guestbook-form';
 import GuestbookList from '../contact/guestbook-list';
 import SnsLinksCard from '../contact/sns-links-card';
@@ -55,6 +56,7 @@ function ContactSection() {
       </Box>
       <Typography
         component="h2"
+        className="contact-section__title"
         sx={{
           mb: 1,
           fontSize: { xs: '1.6rem', md: '2.2rem' },
@@ -63,7 +65,7 @@ function ContactSection() {
           color: 'var(--color-warm-text)',
         }}
       >
-        똑똑, 놀러오세요! 👋🍊
+        똑똑, 놀러오세요! <KnockingHandIcon /> 🍊
       </Typography>
       <Typography
         sx={{

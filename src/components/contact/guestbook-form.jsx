@@ -7,6 +7,7 @@ import TextField from '@mui/material/TextField';
 
 import { validateEmail } from '../../utils/validate-email';
 import ContactCard from './contact-card';
+import WritingPencilIcon from './writing-pencil-icon';
 
 const INITIAL_FORM = { nickname: '', email: '', sns: '', message: '' };
 const MESSAGE_MAX_LENGTH = 300;
@@ -83,7 +84,7 @@ function GuestbookForm({ onSubmit, isDisabled = false }) {
   };
 
   return (
-    <ContactCard emoji="🦖" title="방명록 남기기" tone="orange">
+    <ContactCard icon={ <WritingPencilIcon /> } title="방명록 남기기" tone="orange">
       <Box component="form" noValidate onSubmit={ handleSubmit } sx={{ display: 'flex', flexDirection: 'column', gap: 1.5 }}>
         <TextField
           name="nickname"
