@@ -50,5 +50,7 @@ export const SNS_LINKS = [
   { id: 'youtube', label: 'YouTube', icon: YouTube, href: 'https://youtube.com' },
 ];
 
-/** 방명록 작성자 아바타로 돌아가며 쓰는 재미있는 이모지 */
-export const GUEST_EMOJIS = ['🦊', '🐥', '🍊', '🌻', '🐯', '🍩', '🦁', '🌞', '🧡', '🐙', '🍕', '🦄'];
+/** 방명록 작성자 아바타로 돌아가며 쓰는 만화 캐릭터 이모지 */
+export const GUEST_EMOJIS = [
+  '🦸', '🧙', '👽', '🤖', '🧛', '👻', '🧜', '🥷', '🧞', '👾', '🧚', '🦹', '🤠', '🧟', '🎃', '🐲',
+];

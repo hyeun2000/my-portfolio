@@ -83,7 +83,7 @@ function GuestbookForm({ onSubmit, isDisabled = false }) {
   };
 
   return (
-    <ContactCard emoji="🐣" title="방명록 남기기" tone="orange">
+    <ContactCard emoji="🦖" title="방명록 남기기" tone="orange">
       <Box component="form" noValidate onSubmit={ handleSubmit } sx={{ display: 'flex', flexDirection: 'column', gap: 1.5 }}>
         <TextField
           name="nickname"
