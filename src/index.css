@@ -33,6 +33,18 @@
   --color-point: #ed7100;
   --color-border: #dddddd;
   --color-border-light: #eeeeee;
+
+  /* Contact 섹션 웜 톤 (무채색 없이 주황·노랑 계열만 사용) */
+  --color-warm-bg: #fff1d6;
+  --color-warm-card: #ffe3a3;
+  --color-warm-card-alt: #ffd0a1;
+  --color-warm-input: #fff8ea;
+  --color-warm-orange: #ff8a3d;
+  --color-warm-orange-dark: #e8650f;
+  --color-warm-yellow: #ffc93c;
+  --color-warm-text: #5a2a0c;
+  --color-warm-text-soft: #8a4a1c;
+  --color-warm-border: #ffb15c;
 }
 
 /* 다크 모드: OS 설정이 다크이고 사용자가 라이트를 직접 고르지 않은 경우 */
@@ -50,6 +62,16 @@
     --color-link-hover: #a3c4fa;
     --color-border: #3a3a3a;
     --color-border-light: #2e2e2e;
+    --color-warm-bg: #3a1f0b;
+    --color-warm-card: #4d2a10;
+    --color-warm-card-alt: #5a2f12;
+    --color-warm-input: #2e1808;
+    --color-warm-orange: #ff9d57;
+    --color-warm-orange-dark: #ff8a3d;
+    --color-warm-yellow: #ffd257;
+    --color-warm-text: #ffe9c7;
+    --color-warm-text-soft: #ffc98a;
+    --color-warm-border: #b8641f;
   }
 }
 
@@ -67,6 +89,16 @@
   --color-link-hover: #a3c4fa;
   --color-border: #3a3a3a;
   --color-border-light: #2e2e2e;
+  --color-warm-bg: #3a1f0b;
+  --color-warm-card: #4d2a10;
+  --color-warm-card-alt: #5a2f12;
+  --color-warm-input: #2e1808;
+  --color-warm-orange: #ff9d57;
+  --color-warm-orange-dark: #ff8a3d;
+  --color-warm-yellow: #ffd257;
+  --color-warm-text: #ffe9c7;
+  --color-warm-text-soft: #ffc98a;
+  --color-warm-border: #b8641f;
 }
 
 @media (prefers-contrast: more) {
