@@ -1,6 +1,9 @@
 const THUM_IO_PREFIX = 'https://image.thum.io/get/';
-/** thum.io 옵션: 애니메이션 없는 정지 이미지 + 아이폰 화면 크기(375×812)로 촬영 */
-const MOBILE_OPTIONS = 'noanimate/iphoneX/';
+/**
+ * thum.io 옵션: 애니메이션 없는 정지 이미지 + 아이폰 화면 크기(375×812)로 촬영
+ * React(SPA) 사이트는 화면이 그려지기 전에 찍히면 흰 화면이 되므로 3초 기다린 뒤 촬영한다.
+ */
+const MOBILE_OPTIONS = 'noanimate/iphoneX/wait/3/';
 
 /**
  * DB 의 thum.io 썸네일 URL 을 모바일 화면 촬영용 URL 로 바꾼다.
